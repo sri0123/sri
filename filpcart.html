@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Blogs</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Micro Blogs</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Micro Blogs</h2>
+        <p>Sharing my thoughts and experiences.</p>
+        <a href="#latest-posts" class="btn">Read More</a>
+    </section>
+
+    <section id="upload-post" class="upload-section">
+        <h2>Upload a New Post</h2>
+        <form  method="POST" enctype="multipart/form-data">
+            <label for="title">Post Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" rows="4" required></textarea>
+
+            <button type="submit">Submit Post</button>
+        </form>
+    </section>
+
+    <main class="blog-section" id="latest-posts">
+        <article class="blog-post">
+            <img src="D:\22bit040\foo\food\assets\images\banner-2.jpg" alt="Post Title 1" class="post-image">
+            <h3>It's about Pizzaa</h3>
+            <p>This is a summary of the <b>It's about Pizzaa</b> blog post. <a href="#">Read more...</a></p>
+        </article>
+        <article class="blog-post">
+            <img src="D:\22bit040\foo\food\assets\images\banner-3.jpg" alt="Post Title 2" class="post-image">
+            <h3>Burgerrrrrrrr</h3>
+            <p>This is a summary of the <b>Burgerrrrrrrr</b> blog post. <a href="#">Read more...</a></p>
+        </article>
+        <article class="blog-post">
+            <img src="D:\22bit040\foo\food\assets\images\banner-4.jpg" alt="Post Title 3" class="post-image">
+            <h3>Let's fusk it</h3>
+            <p>This is a summary of the <b>Let's fusk it</b> blog post. <a href="#">Read more...</a></p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 sri micro blogs . All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
